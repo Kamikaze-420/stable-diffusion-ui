@@ -1,6 +1,6 @@
 @echo off
 
-@echo. & echo "Stable Diffusion UI - v2" & echo.
+@echo. & echo "Stable Diffusion UI - v3" & echo.
 
 set PATH=C:\Windows\System32;%PATH%
 
@@ -52,8 +52,8 @@ if "%update_branch%"=="" (
 
 @REM @xcopy sd-ui-files\ui ui /s /i /Y /q
 @REM @copy sd-ui-files\scripts\on_sd_start.bat scripts\ /Y
-@REM @copy sd-ui-files\scripts\bootstrap.bat scripts\ /Y
-@copy "sd-ui-files\scripts\Start Stable Diffusion UI.cmd" . /Y
+REM @copy sd-ui-files\scripts\bootstrap.bat scripts\ /Y
+@REM @copy "sd-ui-files\scripts\Start Stable Diffusion UI.cmd" . /Y
 @copy "sd-ui-files\scripts\Developer Console.cmd" . /Y
 
 @call scripts\on_sd_start.bat
